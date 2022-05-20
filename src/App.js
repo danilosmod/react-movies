@@ -1,14 +1,15 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Pages/Home";
-import MovieDetails from "./Pages/MovieDetails";
+import Home from "./Pages/HomePage";
+import Footer from "./Components/Footer";
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="moviedetails" element={<MovieDetails />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
