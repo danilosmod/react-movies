@@ -1,20 +1,25 @@
 import React from "react";
 import styled from "styled-components";
 import MovieList from "./MovieList";
+import banner from "../img/banner.jpg";
 
 const MainStyle = styled.div`
   #banner {
-      width: 100%
-  }  
-`
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
 
 const Main = () => {
-    return (
+  return (
     <MainStyle>
-        <img src="https://film-authority.com/wp-content/uploads/2022/03/big-trouble-in-little-china-517543541f76f.jpg" id="banner"/>
-        <MovieList />
+      <img src={banner} id="banner" />
+      <MovieList />
     </MainStyle>
-    ) 
-}
+  );
+};
 
 export default Main;
